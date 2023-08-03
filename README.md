@@ -65,8 +65,7 @@ Untuk detail datanya adalah sebagai berikut:
 
 Mendeteksi pencilan dari suatu nilai (outlier) salah satunya bisa melihat plot dari data tersebut menggunakan boxplot. Boxplot merupakan ringkasan distribusi sampel yang disajikan secara grafis yang bisa menggambarkan bentuk distribusi data (skewness), ukuran tendensi sentral dan ukuran penyebaran (keragaman). Berikut adalah tampilan umum dari boxplot dalam merepresentasikan outliers.
 
-
-
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide1.JPG?raw=true)
 
 ## Mengatasi Outlier
 
@@ -76,6 +75,7 @@ Gunakan hasil dari pengolahan di tahap sebelumnya df_load untuk di olah di tahap
 - Nilai minimum dan maximum data di tolerir
 - Ubah nilai yang di luar range minimum & maximum ke dalam nilai minimum dan maximum
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide2.JPG?raw=true)
 
 
 ## Exploratory Data Analysis
@@ -94,24 +94,21 @@ Dalam kasus ini, akan melihat persebaran dari:
 
 Visualisasi data secara univariat terkait prosentase data churn dari pelanggan. Fungsi value_counts() untuk menghitung banyaknya unik dari sebuah kolom, pie() untuk membuat pie chart.
 
-
-
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide3.JPG?raw=true)
 
 # Exploratory Data Analysis (EDA) Variabel Numerik
 
 Selanjutnya adalah memilih variable predictor yang bersifat numerik dan membuat plot secara bivariat, kemudian menginterpretasikannya.
 Data `df_load` untuk di olah di tahap ini dan fungsi `subplots()` untuk membuat gambar dan satu set subplot.
 
-
-
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide4.JPG?raw=true)
 
 # Exploratory Data Analysis (EDA) Variabel Kategorik
 
 Melakukan pemilihan variable predictor yang bersifat kategorik dan membuat plot secara bivariat, kemudian menginterpretasikannya.
 Data `df_load` untuk di olah di tahap ini. Fungsi `countplot()` untuk membuat plot dengan jumlah pengamatan di setiap bin kategorik variable.
 
-
-
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide5.JPG?raw=true)
 
 # Kesimpulan
 Berdasarkan hasil dan analisa di atas dapat disimpulkan:
@@ -127,7 +124,9 @@ Berdasarkan hasil dan analisa di atas dapat disimpulkan:
 Selanjutnya membuat model dengan menggunakan Algoritma Logistic Regression.
 LogisticRegression() memanggil algoritma tersebut, fit ke data train dan simpan sebagai log_model
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide6.JPG?raw=true)
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide7.JPG?raw=true)
 
 # Kesimpulan
 Dari hasil dan analisa di atas, maka:
@@ -141,7 +140,9 @@ Dari hasil dan analisa di atas, maka:
 
 Selanjutnya membuat model dengan menggunakan Algoritma Random Forest Classifier. RandomForestClassifier() memanggil algoritma tersebut, fit ke data train dan simpan sebagai rdf_model
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide8.JPG?raw=true)
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide9.JPG?raw=true)
 
 # Kesimpulan
 Dari hasil dan analisa di atas, maka:
@@ -154,8 +155,9 @@ Model berikutnya dapat dibuat dengan menggunakan Algoritma Gradient Boosting Cla
  
 GradientBoostingClassifier() memanggil algoritma tersebut, fit ke data train dan simpan sebagai gbt_model
 
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide10.JPG?raw=true)
 
-
+![alt text](https://github.com/muhammadrafi18/Telecomunication_Machine_Learning/blob/main/Slide11.JPG?raw=true)
 
 # Kesimpulan
 Dari hasil dan analisa di atas, maka:
@@ -168,6 +170,9 @@ Model yang baik adalah model yang mampu memberikan performa bagus di fase traini
 - Over-Fitting adalah suatu kondisi dimana model mampu memprediksi dengan sangat baik di fase training, akan tetapi tidak mampu memprediksi sama baiknya di fase testing.
 - Under-Fitting adalah suatu kondisi dimana model kurang mampu memprediksi dengan baik di fase training, akan tetapi mampu memprediksi dengan baik di fase testing.
 - Appropriate-Fitting adalah suatu kondisi dimana model mampu memprediksi dengan baik di fase training maupun di fase testing.
+
+# Kesimpulan
+Berdasarkan pemodelan yang telah dilakukan dengan menggunakan Logistic Regression, Random Forest dan Extreme Gradiant Boost, maka dapat disimpulkan untuk memprediksi churn dari pelanggan telco dengan menggunakan dataset ini model terbaiknya adalah menggunakan algortima Logistic Regression. Hal ini dikarenakan performa dari model Logistic Regression cenderung mampu memprediksi sama baiknya di fase training maupun testing (akurasi training 80%, akurasi testing 79%), dilain sisi algoritma lainnya cenderung Over-Fitting performanya. Akan tetapi hal ini tidak menjadikan kita untuk menarik kesimpulan bahwsannya jika untuk melakukan pemodelan apapun maka digunakan Logistic Regression, tetap harus melakukan banyak percobaan model untuk menentukan mana yang terbaik.
 
 
 
